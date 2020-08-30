@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://somewhere.jacbeekers.nl/metadata/schemas/interface/0.1.0/physical_entity_assoc.json",
+  "$id": "https://somewhere.jacbeekers.nl/metadata/schemas/interface/0.2.0/physical_entity_assoc.json",
   "title": "Physical Entity Association",
   "description": "The association of two (or more) physical entities",
   "required": [
@@ -13,6 +13,13 @@
   ],
   "type": "object",
   "properties": {
+    "meta": {
+      "type": "string",
+      "description": "metadata type",
+      "enum": [
+        "physical_entity_assoc"
+      ]
+    },
     "uid": {
       "description": "The unique identifier for the association",
       "type": "string",
@@ -25,7 +32,7 @@
     "job": {
       "oneOf": [
         {
-          "$ref": "file:metadata/schemas/interface/0.1.0/job.json"
+          "$ref": "file:metadata-registry-interface-specifications/metadata/schemas/interface/0.2.0/job.json"
         },
         {
           "type": "string",
@@ -38,7 +45,7 @@
     "dag": {
       "oneOf": [
         {
-          "$ref": "file:metadata/schemas/interface/0.1.0/dag.json"
+          "$ref": "file:metadata-registry-interface-specifications/metadata/schemas/interface/0.2.0/dag.json"
         },
         {
           "type": "string",
@@ -51,7 +58,7 @@
     "task": {
       "oneOf": [
         {
-          "$ref": "file:metadata/schemas/interface/0.1.0/task.json"
+          "$ref": "file:metadata-registry-interface-specifications/metadata/schemas/interface/0.2.0/task.json"
         },
         {
           "type": "string",
@@ -85,7 +92,7 @@
         "from": {
           "oneOf": [
             {
-              "$ref": "file:metadata/schemas/interface/0.1.0/physical_entity.json"
+              "$ref": "file:metadata-registry-interface-specifications/metadata/schemas/interface/0.2.0/physical_entity.json"
             },
             {
               "type": "string",
@@ -97,7 +104,7 @@
         "to": {
           "oneOf": [
             {
-              "$ref": "file:metadata/schemas/interface/0.1.0/physical_entity.json"
+              "$ref": "file:metadata-registry-interface-specifications/metadata/schemas/interface/0.2.0/physical_entity.json"
             },
             {
               "type": "string",

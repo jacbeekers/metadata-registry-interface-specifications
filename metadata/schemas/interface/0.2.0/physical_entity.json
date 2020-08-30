@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://somewhere.jacbeekers.nl/metadata/schemas/interface/0.1.0/physical_entity.json",
+  "$id": "https://somewhere.jacbeekers.nl/metadata/schemas/interface/0.2.0/physical_entity.json",
   "title": "Physical Entity",
   "type": "object",
   "description": "Description of the physical entity",
@@ -11,11 +11,19 @@
     "version"
   ],
   "properties": {
+    "meta": {
+      "type": "string",
+      "description": "metadata type",
+      "enum": [
+        "physical_entity"
+      ]
+    },
     "entity_type": {
       "description": "The physical entity's type",
       "type": "string",
       "enum": [
         "file",
+        "table",
         "stream",
         "api"
       ]

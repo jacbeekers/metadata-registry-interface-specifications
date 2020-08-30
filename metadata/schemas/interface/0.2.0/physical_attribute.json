@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://somewhere.jacbeekers.nl/metadata/schemas/interface/0.2.0/physical_attribute.json",
+  "title": "Physical Attribute",
+  "description": "Description of the physical attribute",
+  "required": [
+    "attribute_list",
+    "physicalEntity",
+    "version"
+  ],
+  "type": "object",
+  "properties": {
+    "meta": {
+      "type": "string",
+      "description": "metadata type",
+      "enum": [
+        "physical_attribute"
+      ]
+    },
+    "attribute_list": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/attribute"
+      },
+      "uniqueItems": true
+    },
+    "physicalEntity": {
+      "oneOf": [
+        {
+          "$ref": "file:metadata-registry-interface-specifications/metadata/schemas/interface/0.2.0/physical_entity.json"
+        },
+        {
+          "type": "string",
+          "format": "uuid",
+          "pattern": "^(.+)-(.+)-(.+)$"
+        }
+      ],
+      "description": "Physical entity the attribute belongs to"
+    },
+    "version": {
+      "description": "The metadata version number of the attribute",
+      "pattern": "^([0-9]+).([0-9]+).([0-9]+)$",
+      "type": "string"
+    }
+  },
+  "definitions": {
+    "attribute": {
+      "type": "object",
+      "required": [
+        "uid",
+        "name"
+      ],
+      "properties": {
+        "uid": {
+          "description": "The unique identifier of the physical attribute.",
+          "type": "string",
+          "format": "uuid"
+        },
+        "name": {
+          "description": "The name of the physical attribute",
+          "type": "string"
+        },
+        "description": {
+          "description": "The description of the physical attribute",
+          "type": "string"
+        }
+      }
+    }
+  }
+}
