@@ -1,0 +1,7 @@
+{
+  "uid": "f6299c11-1a24-4b3f-9cf5-20e3a91f5933",
+  "name": "attribute 1",
+  "description": "The attribute is 1",
+  "physicalEntity" : "d042b292-7c81-408a-ad43-49833ca804c1",
+  "version": "1.0.0"
+}
