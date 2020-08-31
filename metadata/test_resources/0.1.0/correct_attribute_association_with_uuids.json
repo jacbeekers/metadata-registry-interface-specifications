@@ -2,7 +2,7 @@
   "uid": "bc6f6de3-9901-4007-976b-46ea66e9a699",
   "name": "attribute1 to attribute2",
   "version": "1.0.0",
-  "physicalEntityAssocation": "d042b292-7c81-408a-ad43-49833ca804c1",
+  "physicalEntityAssocation": "53ad44a7-66e9-4374-acf2-d02d8e233820",
   "sourceTargetAttributeLinks": [
     { "transformation" : {
       "uid" : "df439fcf-bd8a-4707-ab93-2aed47e4d28d",
