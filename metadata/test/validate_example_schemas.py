@@ -11,32 +11,16 @@ class ValidateExampleSchemas(unittest.TestCase):
     base_test_resources_directory = "../test_resources/" + version + "/"
 
     def test_physical_entity_schema(self):
-        json_document = self.base_test_resources_directory + "correct_entity.json"
+        json_document = self.base_test_resources_directory + "correct_entity_source.json"
         self.assertTrue(Path(json_document).is_file(), "Could not find entity JSON file >" + json_document + "<.")
         json_schema = self.base_schema_directory + "physical_entity.json"
         self.assertTrue(Path(json_schema).is_file(), "Could not find entity JSON schema >" + json_schema + "<.")
 
         self.assertTrue(self.validate(json_document, json_schema))
 
-    def test_physical_attribute_schema(self):
-        # Case 1 - JSON contains complete entity definition
-        json_document = self.base_test_resources_directory + "correct_attribute.json"
-        print(json_document)
-        with open(json_document, "r") as read_file:
-            data = json.load(read_file)
-            print(data)
-        self.assertTrue(Path(json_document).is_file(), "Could not find attribute JSON file >" + json_document + "<.")
-        json_schema = self.base_schema_directory + "physical_attribute.json"
-        print(json_schema)
-        with open(json_schema, "r") as read_file:
-            data = json.load(read_file)
-            print(data)
-        self.assertTrue(Path(json_schema).is_file(), "Could not find attribute JSON schema >" + json_schema + "<.")
-        self.assertTrue(self.validate(json_document, json_schema))
-
     def test_physical_attribute_schema_with_uuid(self):
-        # Case 2 - JSON contains only the UUID of the entity
-        json_document = self.base_test_resources_directory + "correct_attribute_with_uuid.json"
+        # Case 1 - JSON contains only the UUID of the entity
+        json_document = self.base_test_resources_directory + "correct_attribute_source.json"
         self.assertTrue(Path(json_document).is_file(), "Could not find attribute JSON file >" + json_document + "<.")
         json_schema = self.base_schema_directory + "physical_attribute.json"
         self.assertTrue(Path(json_schema).is_file(), "Could not find attribute JSON schema >" + json_schema + "<.")
@@ -46,7 +30,7 @@ class ValidateExampleSchemas(unittest.TestCase):
         json_document = self.base_test_resources_directory + "correct_entity_association_with_uuids.json"
         self.assertTrue(Path(json_document).is_file(),
                         "Could not find entity association JSON file >" + json_document + "<.")
-        json_schema = self.base_schema_directory + "physical_entity_assoc.json"
+        json_schema = self.base_schema_directory + "physical_entity_association.json"
         self.assertTrue(Path(json_schema).is_file(),
                         "Could not find entity association JSON schema >" + json_schema + "<.")
         self.assertTrue(self.validate(json_document, json_schema))
@@ -56,7 +40,7 @@ class ValidateExampleSchemas(unittest.TestCase):
         json_document = self.base_test_resources_directory + "correct_attribute_association_with_uuids.json"
         self.assertTrue(Path(json_document).is_file(),
                         "Could not find attribute association JSON file >" + json_document + "<.")
-        json_schema = self.base_schema_directory + "physical_attribute_assoc.json"
+        json_schema = self.base_schema_directory + "physical_attribute_association.json"
         self.assertTrue(Path(json_schema).is_file(),
                         "Could not find attribute association JSON schema >" + json_schema + "<.")
         self.assertTrue(self.validate(json_document, json_schema))

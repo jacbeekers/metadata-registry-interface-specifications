@@ -34,9 +34,6 @@
     "physicalEntity": {
       "oneOf": [
         {
-          "$ref": "../0.2.0/physical_entity.json"
-        },
-        {
           "type": "string",
           "format": "uuid",
           "pattern": "^(.+)-(.+)-(.+)$"

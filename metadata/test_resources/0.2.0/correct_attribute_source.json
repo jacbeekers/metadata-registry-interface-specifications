@@ -5,13 +5,21 @@
   "attribute_list": [
     {
       "uid": "f6299c11-1a24-4b3f-9cf5-20e3a91f5933",
-      "name": "attribute 1",
+      "name": "source_field_1",
       "description": "The attribute is 1"
     },
     {
       "uid": "f6299c11-1a24-4b3f-9cf5-dffaffasf",
-      "name": "attribute 2",
+      "name": "source_field_2",
       "description": "The attribute is 2"
+    },
+    {
+      "uid": "d042b292-7c81-408a-ad43-49833ca804c1",
+      "name": "source_field_3"
+    },
+    {
+      "uid": "df439fcf-bd8a-4707-ab93-2aed47e4d28d",
+      "name": "source_field_4"
     }
   ],
   "physical_entity" : "d042b292-7c81-408a-ad43-49833ca804c1"

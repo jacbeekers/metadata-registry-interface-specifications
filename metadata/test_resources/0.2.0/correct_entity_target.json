@@ -1,0 +1,11 @@
+{
+  "meta": "physical_entity",
+  "meta_version": "0.2.0",
+  "entity_type": "file",
+  "name": "the_target_file_name",
+  "description": "my own file",
+  "uid": "399dfd85-b109-4ac0-b38e-1702844e24e5",
+  "LoGSID": "",
+  "OARID": "1",
+  "version": "1.0.0"
+}

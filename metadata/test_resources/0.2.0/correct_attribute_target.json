@@ -1,0 +1,18 @@
+{
+  "meta": "physical_attribute",
+  "meta_version": "0.2.0",
+  "version": "1.0.0",
+  "attribute_list": [
+    {
+      "uid": "ed2359d8-9bc8-4fc8-bc6e-d4a2385efcc0",
+      "name": "out_attribute_1",
+      "description": "The attribute is 1"
+    },
+    {
+      "uid": "ae91794d-dde0-4412-a7ba-1be0025d4480",
+      "name": "out_attribute_2",
+      "description": "The attribute is 2"
+    }
+  ],
+  "physical_entity" : "399dfd85-b109-4ac0-b38e-1702844e24e5"
+}

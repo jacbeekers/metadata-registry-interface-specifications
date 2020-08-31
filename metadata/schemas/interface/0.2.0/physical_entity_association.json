@@ -37,9 +37,6 @@
     "job": {
       "oneOf": [
         {
-          "$ref": "../0.2.0/job.json"
-        },
-        {
           "type": "string",
           "format": "uuid",
           "pattern": "^(.+)-(.+)-(.+)$"
@@ -50,9 +47,6 @@
     "dag": {
       "oneOf": [
         {
-          "$ref": "../0.2.0/dag.json"
-        },
-        {
           "type": "string",
           "format": "uuid",
           "pattern": "^(.+)-(.+)-(.+)$"
@@ -62,9 +56,6 @@
     },
     "task": {
       "oneOf": [
-        {
-          "$ref": "../0.2.0/task.json"
-        },
         {
           "type": "string",
           "format": "uuid",

@@ -2,17 +2,30 @@
   "meta": "physical_attribute_association",
   "meta_version": "0.2.0",
   "uid": "bc6f6de3-9901-4007-976b-46ea66e9a699",
-  "name": "attribute1 to attribute2",
+  "name": "attribute mappings example",
   "version": "1.0.0",
   "physical_entity_association": "53ad44a7-66e9-4374-acf2-d02d8e233820",
   "source_target_attribute_links": [
-    { "transformation" : {
-      "uid" : "df439fcf-bd8a-4707-ab93-2aed47e4d28d",
-      "from" : [ "d042b292-7c81-408a-ad43-49833ca804c1", "df439fcf-bd8a-4707-ab93-2aed47e4d28d" ],
-      "to": "ed2359d8-9bc8-4fc8-bc6e-d4a2385efcc0",
+    {
+      "transformation": {
+        "uid": "df439fcf-bd8a-4707-ab93-2aed47e4d28d",
+        "from": [
+          "d042b292-7c81-408a-ad43-49833ca804c1",
+          "df439fcf-bd8a-4707-ab93-2aed47e4d28d"
+        ],
+        "to": "ed2359d8-9bc8-4fc8-bc6e-d4a2385efcc0"
+      },
       "description": "Fields are concatenated with a space character",
       "formula": "{{d042b292-7c81-408a-ad43-49833ca804c1}} + ' ' + {{df439fcf-bd8a-4707-ab93-2aed47e4d28d}}"
-    }
+    },
+    {
+      "transformation": {
+        "uid": "9dc9261c-0b38-4007-8d3f-47a75f3848d3",
+        "from": [],
+        "to": "ae91794d-dde0-4412-a7ba-1be0025d4480"
+      },
+      "description": "new target field, not based on source field.",
+      "formula": "current_timestamp()"
     }
   ]
 }
