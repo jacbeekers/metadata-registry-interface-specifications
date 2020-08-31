@@ -1,4 +1,6 @@
 {
+  "meta": "physical_attribute",
+  "meta_version": "0.2.0",
   "attribute_list": [
     {
       "uid": "f6299c11-1a24-4b3f-9cf5-20e3a91f5933",
@@ -6,16 +8,21 @@
       "description": "The attribute is 1"
     },
     {
-      "uid": "f6299c11-1a24-4b3f-9cf5-dffaffasf",
+      "uid": "cec3f1fd-f0ab-436f-8e68-ad46debe7b32",
       "name": "attribute 2",
       "description": "The attribute is 2"
     }
   ],
-  "physicalEntity": {
-    "entity_type": "file",
-    "name": "the_file_name",
-    "version": "1.0.0",
-    "uid": "d042b292-7c81-408a-ad43-49833ca804c1"
-  },
+  "physical_entity": {
+      "meta": "physical_entity",
+      "meta_version": "0.2.0",
+      "entity_type": "file",
+      "uid": "d042b292-7c81-408a-ad43-49833ca804c1",
+      "name": "the_file_name",
+      "description": "my own file",
+      "LoGSID": "1",
+      "OARID": "1",
+      "version": "1.0.0"
+    },
   "version": "1.0.0"
 }

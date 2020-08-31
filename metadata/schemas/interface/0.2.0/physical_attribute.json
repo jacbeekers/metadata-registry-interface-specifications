@@ -1,14 +1,14 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://somewhere.jacbeekers.nl/metadata/schemas/interface/0.2.0/physical_attribute.json",
+  "$id": "https://github.com/jacbeekers/metadata-registry-interface-specifications/blob/master/metadata/schemas/interface/0.2.0/physical_attribute.json",
   "title": "Physical Attribute",
   "description": "Description of the physical attribute",
   "required": [
-    "attribute_list",
-    "physicalEntity",
-    "version",
     "meta",
-    "meta_version"
+    "meta_version",
+    "attribute_list",
+    "physical_entity",
+    "version"
   ],
   "type": "object",
   "properties": {
@@ -34,7 +34,7 @@
     "physicalEntity": {
       "oneOf": [
         {
-          "$ref": "file:metadata-registry-interface-specifications/metadata/schemas/interface/0.2.0/physical_entity.json"
+          "$ref": "../0.2.0/physical_entity.json"
         },
         {
           "type": "string",

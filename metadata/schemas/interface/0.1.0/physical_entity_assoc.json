@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://somewhere.jacbeekers.nl/metadata/schemas/interface/0.1.0/physical_entity_assoc.json",
+  "$id": "https://github.com/jacbeekers/metadata-registry-interface-specifications/blob/master/metadata/schemas/interface/0.1.0/physical_entity_assoc.json",
   "title": "Physical Entity Association",
   "description": "The association of two (or more) physical entities",
   "required": [
@@ -25,7 +25,7 @@
     "job": {
       "oneOf": [
         {
-          "$ref": "file:metadata/schemas/interface/0.1.0/job.json"
+          "$ref": "https://github.com/jacbeekers/metadata-registry-interface-specifications/blob/master/metadata/schemas/interface/0.1.0/job.json"
         },
         {
           "type": "string",
@@ -38,7 +38,7 @@
     "dag": {
       "oneOf": [
         {
-          "$ref": "file:metadata/schemas/interface/0.1.0/dag.json"
+          "$ref": "https://github.com/jacbeekers/metadata-registry-interface-specifications/blob/master/metadata/schemas/interface/0.1.0/dag.json"
         },
         {
           "type": "string",
@@ -51,7 +51,7 @@
     "task": {
       "oneOf": [
         {
-          "$ref": "file:metadata/schemas/interface/0.1.0/task.json"
+          "$ref": "https://github.com/jacbeekers/metadata-registry-interface-specifications/blob/master/metadata/schemas/interface/0.1.0/task.json"
         },
         {
           "type": "string",
@@ -85,7 +85,7 @@
         "from": {
           "oneOf": [
             {
-              "$ref": "file:metadata/schemas/interface/0.1.0/physical_entity.json"
+              "$ref": "https://github.com/jacbeekers/metadata-registry-interface-specifications/blob/master/metadata/schemas/interface/0.1.0/physical_entity.json"
             },
             {
               "type": "string",
@@ -97,7 +97,7 @@
         "to": {
           "oneOf": [
             {
-              "$ref": "file:metadata/schemas/interface/0.1.0/physical_entity.json"
+              "$ref": "https://github.com/jacbeekers/metadata-registry-interface-specifications/blob/master/metadata/schemas/interface/0.1.0/physical_entity.json"
             },
             {
               "type": "string",

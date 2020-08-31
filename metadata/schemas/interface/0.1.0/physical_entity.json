@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://somewhere.jacbeekers.nl/metadata/schemas/interface/0.1.0/physical_entity.json",
+  "$id": "https://github.com/jacbeekers/metadata-registry-interface-specifications/blob/master/metadata/schemas/interface//0.1.0/physical_entity.json",
   "title": "Physical Entity",
   "type": "object",
   "description": "Description of the physical entity",

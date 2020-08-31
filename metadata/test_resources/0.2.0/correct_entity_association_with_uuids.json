@@ -1,0 +1,13 @@
+{
+  "meta": "physical_entity_association",
+  "meta_version": "0.2.0",
+  "uid": "53ad44a7-66e9-4374-acf2-d02d8e233820",
+  "name": "entity1 to entity2",
+  "version": "1.0.0",
+  "source_target_entity_links": [
+    {
+      "from": "d042b292-7c81-408a-ad43-49833ca804c1",
+      "to": "ed2359d8-9bc8-4fc8-bc6e-d4a2385efcc0"
+    }
+  ]
+}

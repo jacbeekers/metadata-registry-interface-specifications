@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://somewhere.jacbeekers.nl/metadata/schemas/interface/0.1.0/dag.json",
+  "$id": "https://github.com/jacbeekers/metadata-registry-interface-specifications/blob/master/metadata/schemas/interface/0.1.0/dag.json",
   "title": "DAG configuration",
   "description": "The DAG as defined in the DAG schema configuration (isc-orchestrator/orchestrator).",
   "type": "object",

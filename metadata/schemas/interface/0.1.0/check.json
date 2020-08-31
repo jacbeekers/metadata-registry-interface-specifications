@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://somewhere.jacbeekers.nl/metadata/schemas/interface/0.1.0/check.json",
+  "$id": "https://github.com/jacbeekers/metadata-registry-interface-specifications/blob/master/metadata/schemas/interface/0.1.0/check.json",
   "title": "Check that is part of the Control Framework",
   "description": "A check conducts a technical or logical verification of data",
   "type": "object",

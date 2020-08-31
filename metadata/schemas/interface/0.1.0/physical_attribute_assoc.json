@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://somewhere.jacbeekers.nl/metadata/schemas/interface/0.1.0/physical_attribute_assoc.json",
+  "$id": "https://github.com/jacbeekers/metadata-registry-interface-specifications/blob/master/metadata/schemas/interface/0.1.0/physical_attribute_assoc.json",
   "title": "Physical Entity Association",
   "description": "The association of two (or more) physical attributes",
   "required": [
@@ -29,7 +29,7 @@
     "physicalEntityAssocation": {
       "oneOf": [
         {
-          "$ref": "file:metadata/schemas/interface/0.1.0/physical_entity_assoc.json"
+          "$ref": "https://github.com/jacbeekers/metadata-registry-interface-specifications/blob/master/metadata/schemas/interface/0.1.0/physical_entity_assoc.json"
         },
         {
           "type": "string",
@@ -84,7 +84,7 @@
           "items": {
             "oneOf": [
               {
-                "$ref": "file:metadata/schemas/interface/0.1.0/physical_attribute.json"
+                "$ref": "https://github.com/jacbeekers/metadata-registry-interface-specifications/blob/master/metadata/schemas/interface/0.1.0/physical_attribute.json"
               },
               {
                 "type": "string",
@@ -98,7 +98,7 @@
         "to": {
           "oneOf": [
             {
-              "$ref": "file:metadata/schemas/interface/0.1.0/physical_attribute.json"
+              "$ref": "https://github.com/jacbeekers/metadata-registry-interface-specifications/blob/master/metadata/schemas/interface/0.1.0/physical_attribute.json"
             },
             {
               "type": "string",

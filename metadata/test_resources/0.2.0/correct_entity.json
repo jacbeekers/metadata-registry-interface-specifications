@@ -1,4 +1,6 @@
 {
+  "meta": "physical_entity",
+  "meta_version": "0.2.0",
   "entity_type": "file",
   "name": "the_file_name",
   "description": "my own file",

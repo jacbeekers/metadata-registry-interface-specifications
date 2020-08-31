@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://somewhere.jacbeekers.nl/metadata/schemas/interface/0.2.0/task.json",
+  "$id": "https://github.com/jacbeekers/metadata-registry-interface-specifications/blob/master/metadata/schemas/interface/0.2.0/task.json",
   "title": "Task, part of the DAG",
   "description": "The task in the DAG schema configuration (isc-orchestrator/orchestrator). Simplified for lineage purposes.",
   "required": [
@@ -31,6 +31,10 @@
       "anyOf": [
         {
           "properties": {
+            "uid": {
+              "type": "string",
+              "format": "uuid"
+            },
             "name": {
               "type": "string"
             },
@@ -39,6 +43,7 @@
             }
           },
           "required": [
+            "uid",
             "name",
             "type"
           ]
