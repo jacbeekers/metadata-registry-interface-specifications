@@ -12,6 +12,11 @@
         "job"
       ]
     },
+    "meta_version": {
+      "type": "string",
+      "description": "the meta structure version for the object",
+      "pattern": "^([0-9]+).([0-9]+).*$"
+    },
     "name": {
       "type": "string"
     },
@@ -58,7 +63,9 @@
     "databricks_conn_id",
     "runner",
     "task_type",
-    "existing_cluster_id"
+    "existing_cluster_id",
+    "meta",
+    "meta_version"
   ],
   "additionalProperties": true
 }

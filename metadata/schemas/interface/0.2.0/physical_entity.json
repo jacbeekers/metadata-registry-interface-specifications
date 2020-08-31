@@ -8,7 +8,9 @@
     "entity_type",
     "uid",
     "name",
-    "version"
+    "version",
+    "meta",
+    "meta_version"
   ],
   "properties": {
     "meta": {
@@ -17,6 +19,11 @@
       "enum": [
         "physical_entity"
       ]
+    },
+    "meta_version": {
+      "type": "string",
+      "description": "the meta structure version for the object",
+      "pattern": "^([0-9]+).([0-9]+).*$"
     },
     "entity_type": {
       "description": "The physical entity's type",

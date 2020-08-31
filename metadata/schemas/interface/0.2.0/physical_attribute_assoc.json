@@ -8,7 +8,9 @@
     "name",
     "version",
     "physicalEntityAssocation",
-    "sourceTargetAttributeLinks"
+    "sourceTargetAttributeLinks",
+    "meta",
+    "meta_version"
   ],
   "type": "object",
   "properties": {
@@ -16,8 +18,13 @@
       "type": "string",
       "description": "metadata type",
       "enum": [
-        "physical_attribute_assoc"
+        "physical_attribute_association"
       ]
+    },
+    "meta_version": {
+      "type": "string",
+      "description": "the meta structure version for the object",
+      "pattern": "^([0-9]+).([0-9]+).*$"
     },
     "uid": {
       "description": "The unique identifier for the association",

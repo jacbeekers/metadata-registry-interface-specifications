@@ -3,6 +3,13 @@
   "$id": "https://somewhere.jacbeekers.nl/metadata/schemas/interface/0.2.0/check.json",
   "title": "Check that is part of the Control Framework",
   "description": "A check conducts a technical or logical verification of data",
+  "required": [
+    "uid",
+    "name",
+    "version",
+    "meta",
+    "meta_version"
+  ],
   "type": "object",
   "properties": {
     "meta": {
@@ -11,6 +18,11 @@
       "enum": [
         "check"
       ]
+    },
+    "meta_version": {
+      "type": "string",
+      "description": "the meta structure version for the object",
+      "pattern": "^([0-9]+).([0-9]+).*$"
     },
     "check": {
       "oneOf": [
