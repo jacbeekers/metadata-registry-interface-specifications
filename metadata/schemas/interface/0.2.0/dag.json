@@ -6,6 +6,7 @@
   "required": [
     "meta",
     "meta_version",
+    "version",
     "dag_name",
     "tasks"
   ],
@@ -25,6 +26,14 @@
     },
     "dag_name": {
       "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "version" : {
+      "type": "string",
+      "description": "The version number of this DAG. Increase it whenever something changes.",
+      "pattern": "^([0-9]+).([0-9]+).*$"
     },
     "schedule_interval": {
       "type": [

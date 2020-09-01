@@ -1,0 +1,15 @@
+{
+  "meta": "job",
+  "meta_version": "0.2.0",
+  "uid": "232fb8c5-7695-44a6-b43c-fe9bdcb33954",
+  "name": "sample_job",
+  "version": "1.0.0",
+  "type": "orchestrator.providers.optimus.config.Job",
+  "job": {
+    "$path": "test/example_job.json"
+  },
+  "task_type": "python",
+  "runner": "dbfs:/optimus/test.py",
+  "existing_cluster_id": "trivial",
+  "databricks_conn_id": "databricks_default"
+}

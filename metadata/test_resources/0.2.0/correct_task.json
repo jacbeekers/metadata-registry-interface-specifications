@@ -1,0 +1,10 @@
+{
+  "meta": "task",
+  "meta_version": "0.2.0",
+  "task": {
+    "uid": "4c22cab0-12e0-4522-9872-f52603672327",
+    "name": "ETL process",
+    "type": "orchestrator.config.tasks.Dummy"
+  },
+  "version": "1.0.0"
+}

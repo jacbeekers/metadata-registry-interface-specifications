@@ -4,9 +4,10 @@
   "title": "Task, part of the DAG",
   "description": "The task in the DAG schema configuration (isc-orchestrator/orchestrator). Simplified for lineage purposes.",
   "required": [
-    "task",
     "meta",
-    "meta_version"
+    "meta_version",
+    "task",
+    "version"
   ],
   "type": "object",
   "properties": {
@@ -36,6 +37,9 @@
               "format": "uuid"
             },
             "name": {
+              "type": "string"
+            },
+            "description": {
               "type": "string"
             },
             "type": {

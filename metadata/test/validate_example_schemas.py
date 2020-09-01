@@ -34,7 +34,6 @@ class ValidateExampleSchemas(unittest.TestCase):
         self.assertTrue(Path(json_schema).is_file(),
                         "Could not find entity association JSON schema >" + json_schema + "<.")
         self.assertTrue(self.validate(json_document, json_schema))
-        # TODO: Add test case that does NOT use UUIDs
 
     def test_physical_attribute_association(self):
         json_document = self.base_test_resources_directory + "correct_attribute_association_with_uuids.json"
@@ -44,14 +43,40 @@ class ValidateExampleSchemas(unittest.TestCase):
         self.assertTrue(Path(json_schema).is_file(),
                         "Could not find attribute association JSON schema >" + json_schema + "<.")
         self.assertTrue(self.validate(json_document, json_schema))
-        # TODO: Add test case that does NOT use UUIDs
+
+    def test_task(self):
+        json_document = self.base_test_resources_directory + "correct_task.json"
+        self.assertTrue(Path(json_document).is_file(),
+                        "Could not find attribute association JSON file >" + json_document + "<.")
+        json_schema = self.base_schema_directory + "task.json"
+        self.assertTrue(Path(json_schema).is_file(),
+                        "Could not find attribute association JSON schema >" + json_schema + "<.")
+        self.assertTrue(self.validate(json_document, json_schema))
+
+    def test_dag(self):
+        json_document = self.base_test_resources_directory + "correct_dag.json"
+        self.assertTrue(Path(json_document).is_file(),
+                        "Could not find attribute association JSON file >" + json_document + "<.")
+        json_schema = self.base_schema_directory + "dag.json"
+        self.assertTrue(Path(json_schema).is_file(),
+                        "Could not find attribute association JSON schema >" + json_schema + "<.")
+        self.assertTrue(self.validate(json_document, json_schema))
+
+    def test_job(self):
+        json_document = self.base_test_resources_directory + "correct_job.json"
+        self.assertTrue(Path(json_document).is_file(),
+                        "Could not find attribute association JSON file >" + json_document + "<.")
+        json_schema = self.base_schema_directory + "job.json"
+        self.assertTrue(Path(json_schema).is_file(),
+                        "Could not find attribute association JSON schema >" + json_schema + "<.")
+        self.assertTrue(self.validate(json_document, json_schema))
 
     def validate(self, doc, schema):
 
         with open(doc) as file:
+            the_doc = json.load(file)
             with open(schema) as structure:
                 try:
-                    the_doc = json.load(file)
                     the_schema = json.load(structure)
                     jsonschema.validate(the_doc, the_schema)
                     return True
