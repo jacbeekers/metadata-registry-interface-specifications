@@ -31,7 +31,7 @@
       },
       "uniqueItems": true
     },
-    "physicalEntity": {
+    "physical_entity": {
       "oneOf": [
         {
           "type": "string",
