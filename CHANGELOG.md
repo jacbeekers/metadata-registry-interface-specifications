@@ -9,10 +9,12 @@ The master branch may contain functionality that is not yet in a point release. 
 
 * Lineage metadata structures for physical entities and their attributes, including the association between them
 
+## Version 0.3.0
 
-## Version 0.1.0
-
-* Introduction unit tests
+### Breaking structure changes
+* task.json is now an array with tasks, so for one DAG one single file with all tasks within that DAG can be provided. The task json must include the uuid of the DAG.
+* added location as required attribute in physical_entity.json
+* the dag.json has been simplified. You can now only reference task uuids. The task uuids have to be listed in a task.json.
 
 ## Version 0.2.0
 
@@ -26,3 +28,7 @@ The master branch may contain functionality that is not yet in a point release. 
 ### Examples and Unit tests
 * provided examples for DAG, job and task
 * Added unittests for DAC, job and task
+
+## Version 0.1.0
+
+* Introduction unit tests
