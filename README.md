@@ -8,7 +8,7 @@ Previous working titles: Central Metadata Catalog, Metadata Hub
 
 ### Background, motivation, context
 
-The project was introduced in July 2020 to provide initial information to the RAP team on how their (and ISC Optimus) could deliver metadata information for lineage purposes to Informatica Enterprise Data Catalog. The solution should be independent of Informatica EDC however, as in the future Informatica EDC will be replaced by an overall, end-to-end metadata management solution that can be used by the entire ABN AMRO organization.
+The project was introduced in July 2020 to provide initial information to the Analyics team on how they could deliver metadata information for lineage purposes to Informatica Enterprise Data Catalog. The solution should be independent of Informatica EDC however, as in the future Informatica EDC will be replaced by an overall, end-to-end metadata management solution.
 
 Hence, a few interface descriptions were needed and this Git repository stores and maintains them.
 
