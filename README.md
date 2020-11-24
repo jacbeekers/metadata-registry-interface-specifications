@@ -43,7 +43,7 @@ It was built for Python 3.6.
 
 ```
 # Clone repository
-git clone https://dev.azure.com/cbsp-abnamro/GRD0001030/_git/metadata-registry-interface-specifications
+git clone https://github.com/jacbeekers/metadata-registry-interface-specifications
 cd metadata-registry-interface-specifications
 
 # Create a virtualenv
