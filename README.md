@@ -54,7 +54,7 @@ source ./venv/bin/activate
 venv\Scripts\activate
 
 # Enable AAB proxy (optional)
-export https_proxy=nl-userproxy-access.net.abnamro.com:8080
+export https_proxy=<some_proxy>:8080
 
 # Install package requirements
 pip3 install -r requirements.txt
