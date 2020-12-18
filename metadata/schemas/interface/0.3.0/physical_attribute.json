@@ -67,6 +67,10 @@
         "description": {
           "description": "The description of the physical attribute.",
           "type": "string"
+        },
+        "datatype": {
+          "description": "The data type of the physical attribute.",
+          "type": "string"
         }
       }
     }

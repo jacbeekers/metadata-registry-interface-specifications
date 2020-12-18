@@ -10,8 +10,7 @@
     "name",
     "version",
     "meta",
-    "meta_version",
-    "location"
+    "meta_version"
   ],
   "properties": {
     "meta": {
@@ -49,21 +48,29 @@
       "description": "The description of the physical entity",
       "type": "string"
     },
-    "LoGSID": {
-      "description": "The List of Golden Sources (LoGS) identifier the physical entity links to",
-      "type": "string"
-    },
-    "OARID": {
-      "description": "The One Application Referencial (OAR) Identifier the physical entity links to",
-      "type": "string"
-    },
     "version": {
       "description": "The version of the physical entity metadata",
       "pattern": "^([0-9]+).([0-9]+).([0-9]+)$",
       "type": "string"
     },
-    "location": {
-      "description": "The location of this entity, e.g. Landing Zone",
+    "layer": {
+      "description": "To which layer the dataset belongs",
+      "type": "string"
+    },
+    "zone": {
+      "description": "To which zone with the layer the dataset belongs",
+      "type": "string"
+    },
+    "technical_system": {
+      "description": "Technical System (Databricks, Synapse, SQL Server, PowerBI, Mainframe, Oracle etc.)",
+      "type": "string"
+    },
+    "application_identifier": {
+      "description": "The application identifier maintaining the entity",
+      "type": "string"
+    },
+    "source_identifier": {
+      "description": "The source that provides the physical entity",
       "type": "string"
     }
   }

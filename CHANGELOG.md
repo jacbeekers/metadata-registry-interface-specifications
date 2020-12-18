@@ -13,9 +13,16 @@ The master branch may contain functionality that is not yet in a point release. 
 
 ### Breaking structure changes
 * task.json is now an array with tasks, so for one DAG one single file with all tasks within that DAG can be provided. The task json must include the uuid of the DAG.
-* added location as required attribute in physical_entity.json
+* physical_entity.json
+  * added location to indicate e.g. in which data zone the entity resides
+  * renamed LoGSId to source_identifier
+  * renamed OARId to application_identifier
 * the dag.json has been simplified. You can now only reference task uuids. The task uuids have to be listed in a task.json.
 
+### Non-breaking structure changes
+* physical_attribute
+    * new attribute: datatype
+    
 ## Version 0.2.0
 
 ### Structure changes
