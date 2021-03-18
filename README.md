@@ -53,7 +53,7 @@ source ./venv/bin/activate
 # Windows:
 venv\Scripts\activate
 
-# Enable AAB proxy (optional)
+# Enable proxy (optional)
 export https_proxy=<some_proxy>:8080
 
 # Install package requirements
